@@ -1,0 +1,13 @@
+<%= form_for @company do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <% Building.all.each do |building| %>
+    <%= f.label building.name %>
+    <%= f.collection_check_boxes :building_ids, building.empty_offices, :floor, :floor %>
+  <br><br>
+  <% end %>
+
+
+
+  <%= f.submit %>
+<% end %>

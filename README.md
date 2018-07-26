@@ -52,7 +52,8 @@ The product team has deemed the following features as crucial:
 
 #### Company:
 
-- Users should be able to create a new company and choose any number of buildings to open an office in, as well as the floors that the company would like to purchase - On this page, a user should be able to see a list of all of its offices, as well as the building in which the office is located - On this page, a user should be able to add an employee to the company - On this page, a user should be able to see a list of all employees - On this page, a user should be able to remove an employee from the company - On this page, a user should be able to see how much total rent it is paying
+- Users should be able to create a new company and choose any number of buildings to open an office in, as well as the floors that the company would like to purchase,
+ - On this page, a user should be able to see a list of all of its offices, as well as the building in which the office is located - On this page, a user should be able to add an employee to the company - On this page, a user should be able to see a list of all employees - On this page, a user should be able to remove an employee from the company - On this page, a user should be able to see how much total rent it is paying
 
 #### Validations:
 
