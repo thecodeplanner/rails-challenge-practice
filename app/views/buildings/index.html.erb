@@ -1,0 +1,12 @@
+<h1>All Available Buildings</h1>
+
+<% @buildings.all.map do |building| %>
+  <div>
+    <ul>
+      <li>Name: <%= link_to building.name, building %></li>
+      <li>Country: <%= building.address %></li>
+      <li>Rent Per Floor: <%= building.rent_per_floor %></li>
+      <li>Floors Available: <%= building.number_of_floors_available.join(", ") %></li>
+    </ul>
+  </div>
+<% end %>

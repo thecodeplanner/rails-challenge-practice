@@ -1,0 +1,20 @@
+<h2>Details for <%= @building.name %>:</h2>
+
+<h4>Companies:</h4>
+<ol>
+  <% @building.companies.map do |company| %>
+    <li><%= company.name %></li>
+  <% end %>
+</ol>
+
+
+<h4>Total Rent Income: $<%= @building.total_rent_income %></h4>
+
+
+<%=
+  link_to "Edit Details for #{@building.name}", edit_building_path(@building)
+%>
+
+<br>
+
+<%= link_to "Back to All Buildings", buildings_path %>
