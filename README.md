@@ -46,17 +46,17 @@ The product team has deemed the following features as crucial:
 
 
 - Users should be able to see a single building's details 
-	- On this page, a user should be able to see all of the companies that have offices in the building
-	- On this page, a user should be able to see how much total rent that building is making based on all the companies that have rented offices in that building
+  - On this page, a user should be able to see all of the companies that have offices in the building
+  - On this page, a user should be able to see how much total rent that building is making based on all the companies that have rented offices in that building
 - Users should be able to see a list of all buildings, as well as a list of all available floors for each building.
-	- **_Hint_** this should be a list of the floor numbers that are available: 1, 3, 6, 8 etc. You may want to save this detail for later
+  - **_Hint_** this should be a list of the floor numbers that are available: 1, 3, 6, 8 etc. You may want to save this detail for later
 - Users should be able to update a building's details
 
 #### Company:
 
 
 - Users should be able to create a new company and choose any number of buildings to open an office in, as well as the floors that the company would like to purchase
-	- We have provided you with helper functions in the Building model to assist you in figuring out which offices are currently open, as well as a form partial to render checkboxes for the open offices
+  - We have provided you with helper functions in the Building model to assist you in figuring out which offices are currently open, as well as a form partial to render checkboxes for the open offices
 - Users should be able to see a show page for an individual company
  - On this page, a user should be able to see a list of all of its offices, as well as the building in which the office is located 
  - On this page, a user should be able to add an employee to the company 
@@ -77,9 +77,9 @@ HR has deemed it legal for us to say that a BONUS will be available if you can a
 
 
 - Users should be able to see the an office show page with the following: 
-	- The building it is in 
-	- The company that is using it 
-	- The employees that are working in it
+  - The building it is in 
+  - The company that is using it 
+  - The employees that are working in it
 - Users should be able to see the number of employees in a building on the building's show page
 
 **WARNING**
