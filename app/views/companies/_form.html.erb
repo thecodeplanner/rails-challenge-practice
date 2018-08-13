@@ -21,14 +21,6 @@
   <% end %>
   <br>
 
-  <br><br>
-  <p>Employee Details</p>
-  <%= f.fields_for :employee do |e| %>
-    <%= e.label 'Employee Name' %>
-    <%= e.text_field :name %>
-    <%= e.label 'Employee Title' %>
-    <%= e.text_field :title %>
-  <% end %>
 
   <%= f.submit %>
 <% end %>

@@ -1,0 +1,31 @@
+<h1><%= @company.name %></h1>
+
+<ul>
+  <% @company.office_info.each do |datum| %>
+    <li><%= datum %></li>
+  <% end %>
+</ul>
+
+
+
+<h4>Total rent: $<%= @company.total_cost %></h4>
+
+
+<h3>Employees:</h3>
+
+<ul>
+  <% @company.employees.each do |employee| %>
+    <li><%= employee.name %> - <%= employee.title %></li>
+  <% end %>
+</ul>
+
+
+<%= form_for @employee do |f| %>
+  <p>Add an employee</p>
+    <%= f.label 'Employee Name' %>
+    <%= f.text_field :name %>
+    <%= f.label 'Employee Title' %>
+    <%= f.text_field :title %>
+    <%= f.hidden_field :company_id, value: @company.id %>
+    <%= f.submit  %>
+<% end %>
