@@ -56,7 +56,7 @@ The product team has deemed the following features as crucial:
 
 
 - Users should be able to create a new company and choose any number of buildings to open an office in, as well as the floors that the company would like to purchase
-  - We have provided you with helper functions in the Building model to assist you in figuring out which offices are currently open, as well as a form partial to render checkboxes for the open offices
+	- We have provided you with helper functions in the Building model to assist you in figuring out which offices are currently open, as well as the form itself. Spend some time looking over the code, but your main responsibility will be to handle the form's submission. 
 - Users should be able to see a show page for an individual company
  - On this page, a user should be able to see a list of all of its offices, as well as the building in which the office is located 
  - On this page, a user should be able to add an employee to the company 
