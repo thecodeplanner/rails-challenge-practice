@@ -1,0 +1,8 @@
+<h3> List of Buildings </h3>
+<% @buildings.each do |building| %>
+    Building Name: <%= building.name %>
+    <br>
+    Number of Floors Available: <%=building.number_of_floors_available%>
+    <br>
+    <br>
+    <%end%>

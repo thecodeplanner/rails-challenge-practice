@@ -1,11 +1,12 @@
+<% if flash[:my_errors] %>
+<ul>
+	<% flash[:my_errors].each do |error| %>
+		<li> <%= error %> </li>
+	<%end%>
+</ul>
+<%end %>
+
 <%= form_for @company do |f| %>
-	<ul>
-		<% if @company.errors.any? %>
-			<%= @company.errors.full_messages.each do |msg| %>
-				<li><%= msg %></li>
-			<% end %>
-		<% end %>
-	</ul>
 
 <p>Company Details</p>
 	<%= f.label :name %>
@@ -17,10 +18,13 @@
 			<%= b_field.hidden_field :id %>
 			<%= b_field.label b.name %>
 			<%= b_field.collection_check_boxes :offices, b.empty_offices, :floor, :floor %>
+			<br>
 		<% end %>
 	<% end %>
 	<br>
 
 
 	<%= f.submit %>
+
+
 <% end %>

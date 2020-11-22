@@ -1,0 +1,8 @@
+<h3> Building Info </h3>
+Building Name: <%= @building.name %>
+<br>
+Companies: <% @building.companies.each do |company| %>
+    <li><%= company.name %></li>
+    <%end %>
+<br>
+Total Rent: <%= @building.total_rent %>

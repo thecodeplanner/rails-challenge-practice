@@ -1,0 +1,27 @@
+
+<h3> Company Name: <%= @company.name %></h3>
+
+<h3> List of Offices </h3>
+<% @company.offices.each do |office| %>
+    <li><%= office.building.name %> </li>
+    <% end %>
+
+<h3> List of All Employees </h3>
+<% @company.employees.each do |employee| %>
+    <li> <%= employee.name %> </li>
+    <br>
+    <%end%>
+
+<h4> Add New Employee </h4>
+<%=form_for @employee do |f| %>
+    <%= f.label :name%>
+    <%= f.text_field :name%><br>
+
+    <%= f.label :title %>
+    <%= f.text_field :title%><br>
+
+    <%= f.label :company_id%>
+    <%= f.collection_select :company_id, [@company], :id, :name %>
+
+    <%= f.submit %>
+<% end %>

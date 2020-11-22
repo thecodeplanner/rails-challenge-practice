@@ -1,0 +1,28 @@
+<h3> Update Building Details </h3>
+
+<% if flash[:my_errors] %>
+<ul>
+    <% flash[:my_errors].each do |error| %>
+        <li> <%= error %> </li>
+    <%end%>
+</ul>
+<%end %>
+
+<%= form_for @building do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+    <br>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+    <br>
+    <%= f.label :rent_per_floor %>
+    <%= f.text_field :rent_per_floor %>
+    <br>
+    <%= f.label :number_of_floors %>
+    <%= f.text_field :number_of_floors %>
+    <br>
+    <%= f.submit %>
+    <%end%>
